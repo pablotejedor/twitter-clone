@@ -4,7 +4,7 @@ import { BsStars } from 'react-icons/bs';
 import TweetForm from '../components/TweetForm';
 import Tweet from '../components/Tweet';
 const Feed = () => {
-  const [tweets, setTweets] = useState([{ content: 'Hello there!' }]);
+  const [tweets, setTweets] = useState([{ content: 'Pista: Click en el logo para cambiar entre light mode / dark mode' }]);
   return (
     <>
       <Stack direction={'row'} spacing={0}>
