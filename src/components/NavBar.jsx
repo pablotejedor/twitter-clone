@@ -20,7 +20,7 @@ const NavBar = () => {
   const hoverColor = useColorModeValue('#CBD5E0', '#2D3748');
   const links = [
     {
-      path: '/home',
+      path: '/',
       text: 'Inicio',
       activeIcon: MdHome,
       inactiveIcon: MdOutlineHome,
@@ -83,7 +83,9 @@ const NavBar = () => {
               borderRightRadius: 9999,
               width: 'fit-content',
             }}
-            padding={3}
+            // padding={3}
+            paddingX={6}
+            paddingY={3}
             margin={-1}
           >
             <Icon

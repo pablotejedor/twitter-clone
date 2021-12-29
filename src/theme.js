@@ -11,14 +11,13 @@ export default extendTheme({
   },
 
   fonts: {
-    '#root': 'arial'
+    '#root': 'arial',
   },
 
   styles: {
     global: {
       'html, body, #root': {
         height: '100%',
-        // fontFamily: 'arial'
       },
     },
   },
@@ -27,6 +26,9 @@ export default extendTheme({
       baseStyle: {
         borderLeftRadius: 9999,
         borderRightRadius: 9999,
+      },
+      _hover: {
+        bg: 'tomato'
       },
       sizes: {
         lg: {

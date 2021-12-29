@@ -5,7 +5,6 @@ import {
   Box,
   Button,
   StackDivider,
-  Text,
 } from '@chakra-ui/react';
 import NavBar from './components/NavBar';
 import Logo from './components/Logo';
@@ -15,7 +14,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Container height="100%" maxWidth="container.xl" alignSelf="center">
-        <Stack direction="row" height="100%" divider={<StackDivider />}>
+        <Stack direction="row" height="100%"
+         divider={<StackDivider style={{margin: 0}}/>}
+         >
           <Stack
             paddingLeft={4}
             paddingRight={8}

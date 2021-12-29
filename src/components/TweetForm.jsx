@@ -11,8 +11,8 @@ const TweetForm = ({ setTweets }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    setTweets(tw => [...tw, tweet]);
-    setTweet({content: ''})
+    setTweets(tw => [tweet, ...tw]);
+    setTweet({ content: '' });
   };
 
   return (
@@ -47,7 +47,13 @@ const TweetForm = ({ setTweets }) => {
                 <Icon as={BsCalendarCheck} h={5} w={5} color={'primary.500'} />
                 <Icon as={GoLocation} h={5} w={5} color={'primary.500'} />
               </Stack>
-              <Button type="submit">Twittear</Button>
+              <Button
+                type="submit"
+                isDisabled={!tweet.content}
+                _hover={{ bg: 'primary.600' }}
+              >
+                Twittear
+              </Button>
             </Stack>
           </Stack>
         </Stack>

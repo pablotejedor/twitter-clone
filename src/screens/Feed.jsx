@@ -1,10 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Stack, Text, Icon, Divider } from '@chakra-ui/react';
 import { BsStars } from 'react-icons/bs';
 import TweetForm from '../components/TweetForm';
 import Tweet from '../components/Tweet';
+import { AnimatePresence } from 'framer-motion';
 const Feed = () => {
-  const [tweets, setTweets] = useState([{ content: 'Pista: Click en el logo para cambiar entre light mode / dark mode' }]);
+  const [tweets, setTweets] = useState([
+    {
+      content:
+        'Pista: Click en el logo para cambiar entre light mode / dark mode',
+    },
+  ]);
   return (
     <>
       <Stack direction={'row'} spacing={0}>
@@ -22,9 +28,8 @@ const Feed = () => {
           </Stack>
           <TweetForm setTweets={setTweets} />
           <Divider />
-
           {tweets.map(tw => (
-            <Tweet content={tw.content} key={Math.random() * 100} />
+            <Tweet content={tw.content} key={tw.content} />
           ))}
         </Stack>
       </Stack>
