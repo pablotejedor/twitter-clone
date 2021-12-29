@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
             <Stack justifyContent={'space-between'}>
               <Logo />
               <NavBar />
-              <Button colorScheme="primary" size="lg">
+              <Button colorScheme="primary" size="lg" _hover={{ bg: 'primary.600' }}>
                 Twittear
               </Button>
             </Stack>

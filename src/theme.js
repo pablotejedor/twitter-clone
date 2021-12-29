@@ -27,9 +27,6 @@ export default extendTheme({
         borderLeftRadius: 9999,
         borderRightRadius: 9999,
       },
-      _hover: {
-        bg: 'tomato'
-      },
       sizes: {
         lg: {
           paddingY: 6,
